@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Stablechain Multiple-Choice Quiz</title>
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<style>
+  body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; max-width:900px; margin:40px auto; line-height:1.45; color:#111; padding:0 20px; }
+  h1 { margin-bottom:6px; }
+  .question { background:#f8f9fb; border:1px solid #e5e7eb; padding:14px; border-radius:8px; margin:18px 0; }
+  .options label { display:block; margin:6px 0; cursor:pointer; }
+  button { background:#0f62fe; color:white; border:none; padding:10px 14px; border-radius:6px; cursor:pointer; font-weight:600; }
+  button.secondary { background:#e6eefc; color:#0f62fe; margin-left:10px; font-weight:600; }
+  .result { margin-top:18px; padding:12px; border-radius:8px; }
+  .correct { background:#e6ffef; border:1px solid #8ee6b8; color:#044d2b; padding:10px; border-radius:6px; }
+  .incorrect { background:#fff0f0; border:1px solid #f2b6b6; color:#7a1b1b; padding:10px; border-radius:6px; }
+</style>
+</head>
+<body>
+<h1>Stablechain Multiple-Choice Quiz</h1>
+
+<form id="quizForm" onsubmit="return false;">
+
+  <div class="question">
+    <p>1. What is the native gas token of Stablechain?</p>
+    <div class="options">
+      <label><input type="radio" name="q1" value="ETH"> ETH</label>
+      <label><input type="radio" name="q1" value="USDT"> USDT</label>
+      <label><input type="radio" name="q1" value="BTC"> BTC</label>
+      <label><input type="radio" name="q1" value="DAI"> DAI</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>2. What is the target transaction finality for Stablechain?</p>
+    <div class="options">
+      <label><input type="radio" name="q2" value="Sub-second"> Sub-second</label>
+      <label><input type="radio" name="q2" value="1 minute"> 1 minute</label>
+      <label><input type="radio" name="q2" value="10 seconds"> 10 seconds</label>
+      <label><input type="radio" name="q2" value="Instant"> Instant</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>3. Which feature allows users to transfer USDT without separate gas fees?</p>
+    <div class="options">
+      <label><input type="radio" name="q3" value="Gas-free USDT transfers"> Gas-free USDT transfers</label>
+      <label><input type="radio" name="q3" value="Gasless ETH"> Gasless ETH</label>
+      <label><input type="radio" name="q3" value="Layer 2 bridge"> Layer 2 bridge</label>
+      <label><input type="radio" name="q3" value="ERC20 standard"> ERC20 standard</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>4. Which company invested in Stable to advance stablecoin payments?</p>
+    <div class="options">
+      <label><input type="radio" name="q4" value="Visa"> Visa</label>
+      <label><input type="radio" name="q4" value="PayPal"> PayPal</label>
+      <label><input type="radio" name="q4" value="Mastercard"> Mastercard</label>
+      <label><input type="radio" name="q4" value="Square"> Square</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>5. What special allocation feature is available for enterprise users?</p>
+    <div class="options">
+      <label><input type="radio" name="q5" value="Guaranteed blockspace allocation"> Guaranteed blockspace allocation</label>
+      <label><input type="radio" name="q5" value="Priority fees"> Priority fees</label>
+      <label><input type="radio" name="q5" value="Faster mining"> Faster mining</label>
+      <label><input type="radio" name="q5" value="Token staking"> Token staking</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>6. Stablechain is primarily optimized for which type of asset?</p>
+    <div class="options">
+      <label><input type="radio" name="q6" value="Stablecoins"> Stablecoins</label>
+      <label><input type="radio" name="q6" value="NFTs"> NFTs</label>
+      <label><input type="radio" name="q6" value="Bitcoin"> Bitcoin</label>
+      <label><input type="radio" name="q6" value="Ethereum"> Ethereum</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>7. Which privacy feature is planned for Stablechain while ensuring compliance?</p>
+    <div class="options">
+      <label><input type="radio" name="q7" value="Confidential transfers"> Confidential transfers</label>
+      <label><input type="radio" name="q7" value="Zero knowledge NFTs"> Zero knowledge NFTs</label>
+      <label><input type="radio" name="q7" value="Public ledger"> Public ledger</label>
+      <label><input type="radio" name="q7" value="Private keys sharing"> Private keys sharing</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>8. True or False: Stable is a Layer-2 scaling solution on Ethereum.</p>
+    <div class="options">
+      <label><input type="radio" name="q8" value="True"> True</label>
+      <label><input type="radio" name="q8" value="False"> False</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>9. What is the practical role of Stablechain relative to legacy financial rails?</p>
+    <div class="options">
+      <label><input type="radio" name="q9" value="New financial operating system"> New financial operating system</label>
+      <label><input type="radio" name="q9" value="Faster ETH bridge"> Faster ETH bridge</label>
+      <label><input type="radio" name="q9" value="NFT marketplace"> NFT marketplace</label>
+      <label><input type="radio" name="q9" value="Decentralized exchange"> Decentralized exchange</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>10. Which two entities led Stable's seed round?</p>
+    <div class="options">
+      <label><input type="radio" name="q10" value="Bitfinex and Hack VC"> Bitfinex and Hack VC</label>
+      <label><input type="radio" name="q10" value="Coinbase and Binance"> Coinbase and Binance</label>
+      <label><input type="radio" name="q10" value="PayPal and Visa"> PayPal and Visa</label>
+      <label><input type="radio" name="q10" value="Mastercard and Square"> Mastercard and Square</label>
+    </div>
+  </div>
+
+  <div style="margin-top:14px;">
+    <button onclick="gradeQuiz()">Submit</button>
+    <button type="button" class="secondary" onclick="resetQuiz()">Reset</button>
+  </div>
+
+  <div id="feedback"></div>
+</form>
+
+<script>
+const correctAnswers = {
+  q1: "USDT",
+  q2: "Sub-second",
+  q3: "Gas-free USDT transfers",
+  q4: "PayPal",
+  q5: "Guaranteed blockspace allocation",
+  q6: "Stablecoins",
+  q7: "Confidential transfers",
+  q8: "False",
+  q9: "New financial operating system",
+  q10: "Bitfinex and Hack VC"
+};
+
+function gradeQuiz() {
+  let score = 0;
+  const total = Object.keys(correctAnswers).length;
+  let feedbackHTML = "";
+
+  for (let i = 1; i <= total; i++) {
+    const qName = "q"+i;
+    const selected = document.querySelector(`input[name="${qName}"]:checked`);
+    const userAnswer = selected ? selected.value : "";
+    const correct = correctAnswers[qName];
+
+    if (userAnswer === correct) score++;
+
+    feedbackHTML += `<div class="${userAnswer === correct ? 'correct':'incorrect'}">
+      <strong>Q${i}:</strong> Your answer: ${userAnswer || '(no answer)'} — ${userAnswer === correct ? 'Correct':'Incorrect'}<br>
+      <em>Correct answer: ${correct}</em>
+    </div>`;
+  }
+
+  feedbackHTML = `<div class="result"><strong>Score: ${score} / ${total}</strong></div>` + feedbackHTML;
+  document.getElementById("feedback").innerHTML = feedbackHTML;
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function resetQuiz() {
+  document.querySelectorAll('input[type=radio]').forEach(r => r.checked = false);
+  document.getElementById("feedback").innerHTML = "";
+}
+</script>
+
+</body>
+</html>
